@@ -1,64 +1,61 @@
-# Ontology Governance Framework Interactive Web
+# Ontology Governance Framework
 
 ## Purpose and scope
 
-This project provides an **Ontology Governance Framework HTML-based viewer** for exploring and exporting a governance framework for ontologies. It is intended to support the design and documentation of semantic artifacts in a structured and reusable way.
+This repository provides the materials 
+developed for the **Ontology Governance Framework**, a conceptual approach for defining, organising, and assessing governance practices in ontology projects.
 
-The resource is especially useful for:
-
-- **Ontology developers and maintainers**: to ensure their ontologies follow well-defined governance principles.
-- **Ontology reviewers**: to evaluate artifacts based on clear criteria and best practices.
-- **Project managers and stakeholders**: to understand the governance processes involved in ontology development.
-
-The scope of the governance model includes:
-
-- **Ten core principles** of ontology governance (e.g., availability, documentation, metadata, reuse...).
-- **Associated requirements** that describe what should be fulfilled to comply with each principle.
-- **Detailed guidelines** offering practical advice and implementation examples for each requirement.
-
-The interactive viewer supports selection of relevant elements, metadata input, and export everything in  **Markdown** format, enabling easy reuse. 
+The framework is composed of three main elements:
 
 ---
 
-## Governance Framework
-
-The governance model is defined in JSON format (file gov_framework.json) and embedded directly in the HTML viewer. It is structured hierarchically as:
-
-![Example of structure of the framework](/images/example_structure_framework.png)
-
-- **Principles** → **Requirements** → **Guidelines**
-
-Each item is presented in a collapsible card layout, with checkboxes for custom selection. Users can choose which parts of the model they want to export to Markdown.
-
-Additionally, at the beginning of the app, the user can add metadata such as:
-
-- Project name
-- Version of the framework
-- Authors
-- License
-- Ontologies to which the model applies
-
-These metadata are also included in the exported Markdown file.
+## 1. Governance Mechanisms
+Governance mechanisms represent the **Principles, Requirements, and Guidelines** that shape the decision-making process how an ontology should be designed, maintained, documented, and shared.    
+These mechanisms can be adapted depending on the needs, maturity, and resources of a specific project or organisation.
 
 ---
 
-## How to use the tool
+## 2. Ontology Lifecycle
+The **lifecycle** represents the temporal component. It defines the phases, activities and tasks for ontology development and evolution.  
+It includes phases such as:
+- requirements specification  
+- development  
+- integration  
+- maintenance 
 
-1. You can use the app directly going to our **GitHub pages**: https://oeg-upm.github.io/Ontology-governance-framework/ or you can download the HTML file **"index.html"** and use the app locally (since the framework is already embedded in the HTML).
-2. **Enter your metadata** in the form at the top of the page.
-3. **Navigate the framework** using the collapsible elements for each principle, requirement, and guideline.
-4. **Select** the elements you want to include in your documentation using the checkboxes.
-5. **Click** the “Export to Markdown” button to download a `.md` file with:
-   - The project metadata
-   - Only the selected governance elements
-
-> ⚠️ WARNING! The tool forces the hierarchy of elements in the frameworks to be followed. Therefore, if the requirements or guidelines are selected without having selected their parent elements (the corresponding principles and requirements), these elements will not be exported and will not be seen in the markdown file. For example, if Principle 1 and Guide G3.1.1 are selected, only Principle 1 will be seen in the markdown file. To see the G3.1.1, you need to select also Principle 3 and Requirement R.3.1.
 
 ---
 
-## Contribute
+## 3. Roles
+This component defines the **actors** and their **responsibilities** responsibilities involved in ontology governance.  
+It identifies roles such as ontology engineers, domain experts, and software developers.
+It helps clarify who does what, reduces ambiguity, and supports coordination within ontology projects.
 
-If you wish to contribute to the improvement of the framework, propose new principles, or enhance the HTML interface, feel free to open an issue or start a discussion in the repository :)
+---
+
+## Included Materials
+
+### 📝 Templates  
+A set of templates is provided to help users **define and adapt their own governance models**, including:
+- Template_Roles_Lifecycle_RACI.xlsx: Template for defining the roles, the lifecycle, and the RACI matrix. 
+- template_diagram_lifecycle_roles_resources.drawio.xml: Template of the diagram representing the lifecycle. To be used with draw.io  
+
+These can be customised to match the needs and context of different ontology projects.
+
+### 📋 Questionnaires  
+The questionnaires included in the repository support the definition and assessment of the governance and help collect feedback from practitioners.  
+They can also be reused by teams who want to assess or refine their governance strategies.
+
+### 📚 Use Cases  
+The repository includes the documentation of **two use cases** (BME and STICS) where the framework is currently being applied.  
+Each case describes:
+- the domain and project context    
+- the documentation developed through the application of the framework
+
+---
+
+## Contribution  
+If you wish to contribute to the improvement of the framework, feel free to open an issue or start a discussion in the repository :)
 
 We welcome feedback and collaboration from the community!
 
@@ -80,4 +77,6 @@ You are free to use, modify, and distribute the contents, provided that proper a
 ---
 ## How to cite this work
 
-Lucia Sanchez-Gonzalez, Maria Poveda-Villalon, and Oscar Corcho. Ontology Governance Framework and Design Tool. May 2025. Available at [GitHub](https://github.com/LuciaSG99/Ontology-governance-framework).
+Lucia Sanchez-Gonzalez, Maria Poveda-Villalon, and Oscar Corcho. Ontology Governance Framework. November 2025. Available at [GitHub](https://github.com/oeg-upm/Ontology-governance-framework/tree/main).
+
+
